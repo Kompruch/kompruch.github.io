@@ -1,0 +1,80 @@
+html body {
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    background-image: url(https://image.freepik.com/free-photo/tropical-green-leaves-background_53876-88891.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: blanchedalmond;
+}
+
+div.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat 3% 30% 50% 17%;
+    background-color: rgba(51, 51, 51, 0.5);
+    height: 100%;
+}
+
+div.atv img {
+    width: 200px;
+    height: 150px;
+}
+
+div.info {
+    grid-area: 2 / 1 / 3 / 4;
+    height: 30%;
+    padding-left: 20px;
+}
+
+img {
+    height: 100px;
+}
+
+div.c-atv {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10% 90%;
+}
+
+div.c-atv h4 {
+    grid-area: 1 / 1 / 2 / 4;
+    align-self: center;
+    padding-left: 20px;
+}
+
+
+
+div.cardatv {
+    
+    display: flex;
+    justify-content: space-around;
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+div.atv {
+    background-color: rgb(55, 88, 62);
+    text-align: center;
+    border:  solid 4px;
+    border-radius: 4px;
+}
+
+div.footer {
+    grid-area: 4 / 1 / 5 / 4;
+}
+
+h1 {
+    padding-left: 20px;
+}
+
+div.h-main {
+    display: flex;
+}
+
+div.c-img {
+
+}
