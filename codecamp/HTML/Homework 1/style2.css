@@ -13,7 +13,7 @@ body {
 div.main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat 20% 20% 50% 10%;
+    grid-template-rows: 10% 30% 60%;
     background-color: rgba(51, 51, 51, 0.5);
     height: 100%;
 }
@@ -58,13 +58,18 @@ div.atv {
     text-align: center;
     border:  solid 4px;
     border-radius: 4px;
+    transition: all .2s ease-in-out;
+    align-self: center;
+    min-height: 280px;
 }
 
 
 
-h1 {
+div.headline {
     padding-left: 20px;
-    display: none;
+    text-align: left;
+    justify-self: left;
+    justify-items: left ;
 }
 
 div.h-main {
@@ -133,3 +138,8 @@ div.nav div {
     display: flex;
     justify-content: space-evenly;
 }
+
+.atv:hover {
+    transform: scale(1.1);
+}
+
