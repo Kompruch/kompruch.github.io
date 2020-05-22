@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3fa5d20467.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Bookingtab</title>
 </head>
 <body>
-    Hello World
+        <ul class="tab">
+            <li><i class="fas fa-plane-departure"></i> Book Flight</li>
+            <li><i class="fas fa-calendar-alt"></i> Schedule</li>
+            <li><i class="fas fa-ticket-alt"></i> Ticket</li>
+            <li><i class="fas fa-hotel"></i> Hotel</li>
+        </ul>
+        <div class="tab-content">
+            <div id="Booking">
+                <form action="" name="bookingform">
+                    <h3>Flying from</h3>
+                    <select class="select-from" name="from">
+                        <option value="Chiang Rai">Chiang Rai</option>
+                        <option value="Chiang Rai">Chiang Mai</option>
+                    </select>
+                    <h3>To</h3>
+                    <select class="select-to" name="to">
+                        <option value="Chiang Rai">Chiang Rai</option>
+                        <option value="Chiang Rai">Chiang Mai</option>
+                    </select>
+                    <h3>Departing</h3>
+                    <input class="date-departing" type="date">
+                    <h3>Returning</h3>
+                    <input class="date-returning" type="date">
+                </form>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div>
+                <h1></h1>
+                <p></p>
+            </div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
