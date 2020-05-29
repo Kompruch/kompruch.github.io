@@ -9,8 +9,9 @@
     <title>Bookingtab</title>
 </head>
 <body>
+    <div class="maintab">
         <ul class="tab">
-            <li><i class="fas fa-plane-departure"></i> Book Flight</li>
+            <li id="firstli"><i class="fas fa-plane-departure"></i> Book Flight</li>
             <li><i class="fas fa-calendar-alt"></i> Schedule</li>
             <li><i class="fas fa-ticket-alt"></i> Ticket</li>
             <li><i class="fas fa-hotel"></i> Hotel</li>
@@ -18,35 +19,66 @@
         <div class="tab-content">
             <div id="Booking">
                 <form action="" name="bookingform">
-                    <h3>Flying from</h3>
-                    <select class="select-from" name="from">
-                        <option value="Chiang Rai">Chiang Rai</option>
-                        <option value="Chiang Rai">Chiang Mai</option>
-                    </select>
-                    <h3>To</h3>
-                    <select class="select-to" name="to">
-                        <option value="Chiang Rai">Chiang Rai</option>
-                        <option value="Chiang Rai">Chiang Mai</option>
-                    </select>
-                    <h3>Departing</h3>
-                    <input class="date-departing" type="date">
-                    <h3>Returning</h3>
-                    <input class="date-returning" type="date">
+                    <fieldset class="bookingform">
+                        <div class="bookingcontent">
+                        <div class="city">
+                            <div class="firstadinfo">
+                                <label for="from">Flying from</label>
+                                <select class="select-from" name="from">
+                                    <option value="Chiang Rai">Chiang Rai</option>
+                                    <option value="Chiang Rai">Chiang Mai</option>
+                                </select>
+                            </div>
+                            <div class="firstadinfo">
+                                <label for="to">To</label>
+                                <select class="select-to" name="to">
+                                        <option value="Chiang Rai">Chiang Rai</option>
+                                        <option value="Chiang Rai">Chiang Mai</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="drdate">
+                                <div>
+                                    <label for="from">Departing</label>
+                                    <input class="date-departing" type="date">
+                                </div>
+                                <div>
+                                    <label for="from">Returning</label>
+                                    <input class="date-returning" type="date">
+                                </div>
+                            </div>
+                        <div class="additionalinfo">
+                            <div>
+                                <label for="adult">Adult</label>
+                                <input  class="select-ad" type="number" name="adult" min="0" max="5" step="1" value="0">
+                            </div>
+                            <div>
+                                <label for="children">Children</label>
+                                <input  class="select-ad" type="number" name="children" min="0" max="5" step="1" value="0">
+                            </div>
+                            <div>
+                                <label for="infant">Infant</label>
+                                <input  class="select-ad" type="number" name="infant" min="0" max="5" step="1" value="0">
+                            </div>
+                            <div>
+                                <label for="currency">Currency</label>
+                                <select class="select-from" name="currency">
+                                    <option value="THB">THB</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="USD">USD</option>
+                                    <option value="JPY">JPY</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button>Search</button>
+                        </div>
+                        </div>
+                    </fieldset>
                 </form>
             </div>
-            <div>
-                <h1></h1>
-                <p></p>
-            </div>
-            <div>
-                <h1></h1>
-                <p></p>
-            </div>
-            <div>
-                <h1></h1>
-                <p></p>
-            </div>
         </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
