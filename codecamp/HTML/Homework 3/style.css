@@ -1,0 +1,19 @@
+table, th, td {
+    border: 1px solid rgb(150, 150, 150);
+    border-style: dashed;
+    color: rgb(194, 71, 71);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tbody td a {
+    text-decoration: none;
+    color: red;
+}
+
+tbody td a:hover {
+    text-decoration: none;
+    color: rgb(248, 90, 90);
+}
